@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Yurt Chronicle | Prints & Custom Wear</title>
+  
+  <!-- Tailwind v2 CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="antialiased text-gray-900">
+
+  <!-- NAVBAR -->
+  <nav class="flex items-center justify-between px-8 py-6">
+    <a href="#" class="text-2xl font-bold">Yurt Chronicle</a>
+    <div class="space-x-6">
+      <a href="#" class="hover:underline">Log in</a>
+      <a href="#" class="btn-primary px-5 py-2 rounded-full">Sign up</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="text-center py-20 bg-white">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+      Luxury Prints & Custom Wear Inspired by Kyrgyzstan
+    </h1>
+    <p class="text-lg md:text-xl mb-8 max-w-xl mx-auto">
+      Bold AI-art designs that carry the heritage of the Tien Shan into your home and wardrobe.
+    </p>
+    <button id="cta-hero" class="btn-primary px-8 py-3 rounded-full text-lg">
+      Shop Prints – Free Shipping
+    </button>
+
+    <!-- Trust Signals -->
+    <div class="flex items-center justify-center space-x-4 mt-8">
+      <span class="text-yellow-500">★ 4.8 App Store</span>
+      <span class="text-gray-400">| Featured by Google</span>
+    </div>
+  </header>
+
+  <!-- FEATURES GRID -->
+  <section class="container mx-auto px-8 py-16 bg-gray-50">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+      <!-- Feature Item -->
+      <div class="text-center">
+        <img src="/icons/lightning.svg" alt="" class="mx-auto mb-4 h-12"/>
+        <h3 class="font-semibold mb-2">One-Click Ordering</h3>
+        <p class="text-gray-600">Instantly send your selection to our print partner.</p>
+      </div>
+      <!-- Repeat for other features -->
+      <div class="text-center">
+        <img src="/icons/paintbrush.svg" alt="" class="mx-auto mb-4 h-12"/>
+        <h3 class="font-semibold mb-2">AI-Driven Art</h3>
+        <p class="text-gray-600">Every print is uniquely generated from Kyrgyz motifs.</p>
+      </div>
+      <div class="text-center">
+        <img src="/icons/world.svg" alt="" class="mx-auto mb-4 h-12"/>
+        <h3 class="font-semibold mb-2">Global Shipping</h3>
+        <p class="text-gray-600">Fast, tracked delivery wherever you are.</p>
+      </div>
+      <div class="text-center">
+        <img src="/icons/support.svg" alt="" class="mx-auto mb-4 h-12"/>
+        <h3 class="font-semibold mb-2">24/7 Support</h3>
+        <p class="text-gray-600">We’re here for you—any question, any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS CLOUD -->
+  <section class="container mx-auto px-8 py-12 bg-white">
+    <h4 class="text-center text-gray-500 mb-8">As Seen On</h4>
+    <div class="flex flex-wrap items-center justify-center gap-8">
+      <img src="/brands/nike.svg" class="h-8 opacity-70" alt="Nike"/>
+      <img src="/brands/prada.svg" class="h-8 opacity-70" alt="Prada"/>
+      <img src="/brands/uniqlo.svg" class="h-8 opacity-70" alt="Uniqlo"/>
+      <!-- Add more as needed -->
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="container mx-auto px-8 py-16 bg-gray-50">
+    <h2 class="text-2xl font-bold text-center mb-8">What Customers Say</h2>
+    <div class="max-w-2xl mx-auto text-center space-y-6">
+      <blockquote class="italic text-gray-700">
+        “Yurt Chronicle’s AI-prints bring home a piece of Kyrgyzstan—every detail is breathtaking.”  
+      </blockquote>
+      <p class="font-semibold">— Aigerim T., Bishkek</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white py-8 text-center text-sm text-gray-500">
+    <div class="space-x-4 mb-4">
+      <a href="#">About</a>·
+      <a href="#">Contact</a>·
+      <a href="#">Privacy Policy</a>·
+      <a href="#">Terms & Conditions</a>
+    </div>
+    <p>© 2025 Yurt Chronicle. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

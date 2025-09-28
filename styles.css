@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.btn-primary {
+  @apply bg-yellow-500 text-gray-900 font-medium hover:bg-yellow-600 transition;
+}
