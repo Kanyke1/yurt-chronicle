@@ -1,108 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Yurt Chronicle | Prints & Custom Wear</title>
-  
-  <!-- Tailwind v2 CDN -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yurt Chronicle — Kyrgyz-Inspired Art Prints</title>
+  <meta name="description" content="Luxury prints inspired by Kyrgyz motifs and the Tien Shan. Hand-designed by a Kyrgyz founder. Ships worldwide.">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yurt Chronicle — Kyrgyz-Inspired Art Prints">
+  <meta property="og:description" content="Luxury prints inspired by Kyrgyz motifs and the Tien Shan. Ships worldwide.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yurt-chronicle.onrender.com/">
+
+  <style>
+    :root{
+      --bg:#0c0c0c; --fg:#f7f7f7; --muted:#bdbdbd; --accent:#e9cc9b; --card:#131313; --line:#262626;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1120px;margin:0 auto;padding:24px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}
+    .brand{font-weight:700;letter-spacing:.5px}
+    nav a{margin-left:18px;color:var(--muted)}
+    nav a:hover{color:var(--fg)}
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;padding:48px 0}
+    .hero h1{font-size:clamp(28px,4.5vw,54px);line-height:1.1;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 22px}
+    .cta{display:inline-block;background:var(--fg);color:#111;padding:12px 18px;border-radius:10px;font-weight:650}
+    .cta:hover{filter:brightness(0.9)}
+    .hero .art{border:1px solid var(--line);border-radius:16px;overflow:hidden}
+    .hero .art img{display:block;width:100%;height:auto}
+    .badges{margin-top:12px;color:var(--muted);font-size:.95rem}
+    section{padding:36px 0;border-top:1px solid var(--line)}
+    h2{font-size:clamp(22px,3vw,30px);margin:0 0 16px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+    .card img{width:100%;height:auto;display:block}
+    .card .pad{padding:14px}
+    .price{opacity:.9;margin:6px 0}
+    .buy{display:inline-block;background:var(--accent);color:#111;padding:10px 14px;border-radius:10px;font-weight:650}
+    .buy:hover{filter:brightness(.95)}
+    .features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .feature{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+    .muted{color:var(--muted)}
+    footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted)}
+    footer nav a{margin-right:14px}
+    .legal p{margin:8px 0;color:var(--muted)}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr;gap:16px}
+      .features{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:560px){ .features{grid-template-columns:1fr} }
+  </style>
 </head>
-<body class="antialiased text-gray-900">
+<body>
+  <div class="wrap">
+    <header aria-label="Top navigation">
+      <div class="brand">Yurt Chronicle</div>
+      <nav>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <!-- NAVBAR -->
-  <nav class="flex items-center justify-between px-8 py-6">
-    <a href="#" class="text-2xl font-bold">Yurt Chronicle</a>
-    <div class="space-x-6">
-      <a href="#" class="hover:underline">Log in</a>
-      <a href="#" class="btn-primary px-5 py-2 rounded-full">Sign up</a>
-    </div>
-  </nav>
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div>
+          <h1>Kyrgyz-Inspired Luxury Prints</h1>
+          <p>Hand-designed motifs from the Tien Shan and the yurt—clean, modern, and made to elevate your space. Ships worldwide.</p>
+          <a class="cta" href="#shop">Shop Prints — Free Shipping</a>
+          <div class="badges">Founder-made • Small-batch • Archival paper</div>
+        </div>
+        <div class="art">
+          <img src="https://picsum.photos/seed/yurtdoor/1000/700" alt="Framed print with Kyrgyz ornamental pattern on a wall">
+        </div>
+      </section>
 
-  <!-- HERO -->
-  <header class="text-center py-20 bg-white">
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
-      Luxury Prints & Custom Wear Inspired by Kyrgyzstan
-    </h1>
-    <p class="text-lg md:text-xl mb-8 max-w-xl mx-auto">
-      Bold AI-art designs that carry the heritage of the Tien Shan into your home and wardrobe.
-    </p>
-    <button id="cta-hero" class="btn-primary px-8 py-3 rounded-full text-lg">
-      Shop Prints – Free Shipping
-    </button>
+      <section aria-label="Benefits">
+        <h2>Why Yurt Chronicle</h2>
+        <div class="features">
+          <div class="feature"><strong>Culture, Elevated</strong><br><span class="muted">Modern design grounded in Kyrgyz heritage.</span></div>
+          <div class="feature"><strong>Archival Quality</strong><br><span class="muted">Matte fine-art paper. Crisp lines. Lasting color.</span></div>
+          <div class="feature"><strong>Ready to Hang</strong><br><span class="muted">Standard sizes that fit off-the-shelf frames.</span></div>
+          <div class="feature"><strong>Global Shipping</strong><br><span class="muted">Worldwide delivery with tracking.</span></div>
+        </div>
+      </section>
 
-    <!-- Trust Signals -->
-    <div class="flex items-center justify-center space-x-4 mt-8">
-      <span class="text-yellow-500">★ 4.8 App Store</span>
-      <span class="text-gray-400">| Featured by Google</span>
-    </div>
-  </header>
+      <section id="shop" aria-label="Shop">
+        <h2>Featured Prints</h2>
+        <div class="grid">
+          <article class="card">
+            <img src="https://picsum.photos/seed/altynai/900/620" alt="Altynai — geometric Kyrgyz motif print">
+            <div class="pad">
+              <h3>Altynai</h3>
+              <p class="muted">8×10” · Matte archival</p>
+              <p class="price">$29</p>
+              <a class="buy" href="https://example.com/checkout-altynai" target="_blank" rel="noopener">Buy</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/tienshan/900/620" alt="Tien Shan — mountain silhouette with traditional pattern">
+            <div class="pad">
+              <h3>Tien Shan</h3>
+              <p class="muted">12×16” · Matte archival</p>
+              <p class="price">$39</p>
+              <a class="buy" href="https://example.com/checkout-tienshan" target="_blank" rel="noopener">Buy</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/yurt/900/620" alt="Yurt Door — ornamental pattern print">
+            <div class="pad">
+              <h3>Yurt Door</h3>
+              <p class="muted">18×24” · Matte archival</p>
+              <p class="price">$59</p>
+              <a class="buy" href="https://example.com/checkout-yurtdoor" target="_blank" rel="noopener">Buy</a>
+            </div>
+          </article>
+        </div>
+        <p class="muted" style="margin-top:10px">Prefer Etsy or Gumroad? Add those product links above and you’re done.</p>
+      </section>
 
-  <!-- FEATURES GRID -->
-  <section class="container mx-auto px-8 py-16 bg-gray-50">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-      <!-- Feature Item -->
-      <div class="text-center">
-        <img src="/icons/lightning.svg" alt="" class="mx-auto mb-4 h-12"/>
-        <h3 class="font-semibold mb-2">One-Click Ordering</h3>
-        <p class="text-gray-600">Instantly send your selection to our print partner.</p>
-      </div>
-      <!-- Repeat for other features -->
-      <div class="text-center">
-        <img src="/icons/paintbrush.svg" alt="" class="mx-auto mb-4 h-12"/>
-        <h3 class="font-semibold mb-2">AI-Driven Art</h3>
-        <p class="text-gray-600">Every print is uniquely generated from Kyrgyz motifs.</p>
-      </div>
-      <div class="text-center">
-        <img src="/icons/world.svg" alt="" class="mx-auto mb-4 h-12"/>
-        <h3 class="font-semibold mb-2">Global Shipping</h3>
-        <p class="text-gray-600">Fast, tracked delivery wherever you are.</p>
-      </div>
-      <div class="text-center">
-        <img src="/icons/support.svg" alt="" class="mx-auto mb-4 h-12"/>
-        <h3 class="font-semibold mb-2">24/7 Support</h3>
-        <p class="text-gray-600">We’re here for you—any question, any time.</p>
-      </div>
-    </div>
-  </section>
+      <section id="about" aria-label="About">
+        <h2>About</h2>
+        <p class="muted">Yurt Chronicle is a design & publishing studio by a Kyrgyz founder. It started as a way to archive heritage motifs and evolved into a modern print brand that blends story, geometry, and architectural minimalism.</p>
+      </section>
 
-  <!-- BRANDS CLOUD -->
-  <section class="container mx-auto px-8 py-12 bg-white">
-    <h4 class="text-center text-gray-500 mb-8">As Seen On</h4>
-    <div class="flex flex-wrap items-center justify-center gap-8">
-      <img src="/brands/nike.svg" class="h-8 opacity-70" alt="Nike"/>
-      <img src="/brands/prada.svg" class="h-8 opacity-70" alt="Prada"/>
-      <img src="/brands/uniqlo.svg" class="h-8 opacity-70" alt="Uniqlo"/>
-      <!-- Add more as needed -->
-    </div>
-  </section>
+      <section id="contact" aria-label="Contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:hello@yurtchronicle.com">hello@yurtchronicle.com</a></p>
+      </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="container mx-auto px-8 py-16 bg-gray-50">
-    <h2 class="text-2xl font-bold text-center mb-8">What Customers Say</h2>
-    <div class="max-w-2xl mx-auto text-center space-y-6">
-      <blockquote class="italic text-gray-700">
-        “Yurt Chronicle’s AI-prints bring home a piece of Kyrgyzstan—every detail is breathtaking.”  
-      </blockquote>
-      <p class="font-semibold">— Aigerim T., Bishkek</p>
-    </div>
-  </section>
+      <!-- Lightweight legal content on-page so you look real on day 1 -->
+      <section id="shipping" aria-label="Shipping & Returns">
+        <h2>Shipping & Returns</h2>
+        <div class="legal">
+          <p><strong>Shipping:</strong> Printed to order. Typical dispatch in 2–4 business days. Tracking provided.</p>
+          <p><strong>Returns:</strong> 30-day returns for unused items in original condition. Contact us first for an RMA.</p>
+        </div>
+      </section>
 
-  <!-- FOOTER -->
-  <footer class="bg-white py-8 text-center text-sm text-gray-500">
-    <div class="space-x-4 mb-4">
-      <a href="#">About</a>·
-      <a href="#">Contact</a>·
-      <a href="#">Privacy Policy</a>·
-      <a href="#">Terms & Conditions</a>
-    </div>
-    <p>© 2025 Yurt Chronicle. All rights reserved.</p>
-  </footer>
+      <section id="privacy" aria-label="Privacy Policy">
+        <h2>Privacy Policy</h2>
+        <div class="legal">
+          <p>We only collect information needed to fulfill your order and provide support. We do not sell personal data. Contact us to request deletion.</p>
+        </div>
+      </section>
 
-  <script src="scripts.js"></script>
+      <section id="terms" aria-label="Terms">
+        <h2>Terms</h2>
+        <div class="legal">
+          <p>By purchasing, you agree to our shipping/returns policy. Artwork is for personal use; no resale or reproduction without permission.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div>&copy; 2025 Yurt Chronicle. All rights reserved.</div>
+      <nav style="margin-top:8px">
+        <a href="#shipping">Shipping & Returns</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+      </nav>
+    </footer>
+  </div>
 </body>
 </html>
